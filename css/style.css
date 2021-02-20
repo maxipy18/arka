@@ -5,18 +5,118 @@
 }
 
 
-body {
-    background-color: #EEEEEE;
+body {    
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;     
+}
+
+/* ------ header ------ */
+
+
 
 .container-header {
     max-width: 1440px;
     margin: 0 auto;
 }
 
-.container {
-    margin: 0 auto;
-    max-width: 1200px;   
+.header__menu {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 19px 24px;
+    background-color: #fff;
 }
+
+.header__logo img {
+    width: 85px;
+    height: 24px;
+}
+
+nav {
+    padding: 0 50px;   
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__item-link {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 18px;
+    color: #011F3A;
+    letter-spacing: 1.96px;
+    text-transform: uppercase;
+    padding: 0 25px;
+    position: relative; 
+    transition: 0.5s;  
+}
+
+.nav__item-link::before,
+.header__account a::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url('../img/three_star.svg');
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+.nav__item {
+    position: relative;
+}
+
+.nav__item:last-of-type a::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url('../img/arrow_down.svg');
+    right: 0;
+    top: 1px;
+    
+}
+
+.header__account a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 18px;
+    color: #011F3A;
+    letter-spacing: 1.96px;
+    text-transform: uppercase;
+    padding-left: 25px;
+    padding-right: 50px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.header__account a::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url('../img/cart.svg');
+    right: 0;    
+}
+
+.nav__item-link:hover,
+.header__account:hover {
+    text-decoration: underline;
+}
+
+.nav__item-link:hover::before,
+.header__account a:hover::before {
+    opacity: 1;
+}
+
