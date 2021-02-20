@@ -311,3 +311,75 @@ nav {
 .unbranded a:hover {
     background-color: #F2AE4D;
 }
+
+/* ------ boxes ------ */
+
+
+.boxes {
+    background-color: #eee;
+    padding: 70px 0;
+}
+
+.boxes__block {
+    padding: 88px 0;
+    background-color: #72BDA3;
+    text-align: center;
+}
+
+.boxes__block h2 {    
+    font-size: 32px;
+    line-height: 41px;
+    color: #011F3A;
+    margin-bottom: 46px;
+}
+
+.boxes__cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 76px;
+}
+
+.boxes__item {
+    text-align: center;
+    max-width: 300px;
+}
+
+.boxes__item img {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.boxes__item h4 {
+    font-size: 18px;
+    line-height: 23px;
+    color: #011F3A;
+    letter-spacing: 0.36px;
+    margin-bottom: 10px;
+}
+
+.boxes__item p {
+    padding-right: 51px;
+    padding-left: 51px;
+    color: #3D5675;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.boxes__block a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 1.96px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 13px 25px;
+    background-color: #3D5675;
+    border-radius: 44px;
+    transition: 0.5s;
+}
+
+.boxes__block a:hover {
+    color: #F2AE4D;
+}
