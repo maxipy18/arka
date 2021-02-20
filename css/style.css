@@ -19,7 +19,7 @@ body {
 
 
 
-.container-header {
+.container__header {
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -57,7 +57,7 @@ nav {
     text-transform: uppercase;
     padding: 0 25px;
     position: relative; 
-    transition: 0.5s;  
+    transition: 0.3s;  
 }
 
 .nav__item-link::before,
@@ -69,7 +69,7 @@ nav {
     background-image: url('../img/three_star.svg');
     left: 0;
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 
@@ -98,7 +98,7 @@ nav {
     padding-left: 25px;
     padding-right: 50px;
     position: relative;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .header__account a::after {
@@ -112,11 +112,57 @@ nav {
 
 .nav__item-link:hover,
 .header__account:hover {
-    text-decoration: underline;
+    text-decoration: underline;    
 }
 
 .nav__item-link:hover::before,
 .header__account a:hover::before {
     opacity: 1;
+}
+
+
+.header__inner {
+    background-color: #F2AE4D;
+}
+
+.header__bg {
+    padding-top: 165px;
+    padding-bottom: 205px;
+    background-image: url('../img/header__inner_bg.png');
+    background-position: right 87px;
+    background-repeat: no-repeat;
+}
+
+.header__content {
+    max-width: 480px;
+    color: #011F3A;
+}
+
+.header__content h2 {              
+    font-size: 48px;
+    margin-bottom: 33px;
+}
+
+.header__content p {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 33px;
+}
+.header__content a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: 1.96px;
+    text-transform: uppercase;
+    padding: 19px 29px;
+    background-color: #3D5675;
+    border-radius: 44px;
+    transition: 0.5s;
+}
+
+.header__content a:hover {
+    color: #F2AE4D;
 }
 
