@@ -166,3 +166,16 @@ nav {
     color: #F2AE4D;
 }
 
+/* ------ logo ----- */
+
+
+.logo {
+    background-color: #fff;
+}
+
+.logo__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
