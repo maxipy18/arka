@@ -179,3 +179,135 @@ nav {
     flex-wrap: wrap;
     padding: 20px 0;
 }
+
+
+/* ------ customize ------ */
+
+
+.customize {
+    background-color: #eee;
+}
+
+.customize__block {
+    padding-top: 57px;
+    padding-bottom: 50px;
+}
+
+.customize__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 63px;
+}
+
+.customize__title h2 {
+    font-size: 32px;
+    color: #011F3A;
+
+}
+
+.customize__title a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #fff;
+    background-color: #3D5675;
+    border-radius: 44px;
+    padding: 13px 25px;
+    transition: 0.5s;
+}
+
+.customize__title a:hover {
+    color: #F2AE4D;
+}
+
+.customize__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 1px;
+    row-gap: 1px;
+    margin-bottom: 46px;
+}
+
+.customize__cards a {
+    text-decoration: none;
+    display: flex;
+}
+
+.card__item {
+    max-width: 398px;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.card__item:hover {
+    background-color: #f2f2f2;
+}
+
+.card__item img {
+    width: 100%;
+}
+
+.card__item h4 {
+    font-size: 18px;
+    color: #011F3A;
+    letter-spacing: 0.36px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 8px;
+}
+
+.card__content {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 4px;
+}
+
+.card__content-spec {
+    width: 60%;
+    color: #777
+}
+
+.card__content-price {
+    text-align: end;
+    color: #A1A1A1;
+}
+
+.unbranded {
+    display: flex;
+    column-gap: 16px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.unbranded span {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #A1A1A1;
+    
+}
+
+.unbranded a {
+    text-decoration: none;
+    color: #3D5675;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 1.96px;
+    text-transform: uppercase;
+    padding: 13px 25px;
+    background-color: #fff;
+    border-radius: 44px;
+    transition: 0.5s;
+}
+
+.unbranded a:hover {
+    background-color: #F2AE4D;
+}
