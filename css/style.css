@@ -595,6 +595,7 @@ nav {
 .user__item-img img {
     max-width: 100%;           
     display: block;
+    margin-bottom: -1px;
 }
 
 .user__card {
@@ -665,4 +666,62 @@ nav {
 
 .card__footer-link:hover {
     background-color: #F2AE4D;    
+}
+
+
+/* -------- it --------- */
+
+
+.it {
+    background-color: #eee;
+}
+
+.it__block {
+    padding-top: 120px;
+    padding-bottom: 137px;
+    text-align: center;
+}
+
+.it__block h2 {
+    font-size: 31px;
+    font-weight: 700;
+    color: #011F3A;
+    margin-bottom: 56px;
+}
+
+.link__disign {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 1.96px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 13px 25px;
+    background-color: #3d5675;
+    border-radius: 44px;
+    margin-right: 11px;
+    transition: 0.5s;
+}
+
+.link__disign:hover {
+    color:#F2AE4D
+}
+
+.link__products {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+    letter-spacing: 1.96px;
+    text-transform: uppercase;
+    color: #3D5675;
+    background-color: #fff;
+    padding: 13px 25px;
+    border-radius: 44px;
+    transition: 0.5s;
+}
+
+.link__products:hover {
+    background-color: #F2AE4D;
 }
