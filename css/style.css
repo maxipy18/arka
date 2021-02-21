@@ -738,9 +738,15 @@ footer {
     justify-content: space-between;
 }
 
+.footer__logo {
+    margin-right: 90px;
+}
+
 .footer__list {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column; 
+    margin-right: 90px; 
+    margin-bottom: 17px;  
 }
 
 .footer__link {
