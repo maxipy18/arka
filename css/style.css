@@ -387,3 +387,54 @@ nav {
 .boxes__block a:hover {
     color: #F2AE4D;
 }
+
+/* ------ advantage ------- */
+
+.advantage {
+    background-color: #eee;
+}
+
+.advantage__block {
+    padding: 0 42px;
+    padding-top: 88px;
+    padding-bottom: 141px;    
+}
+
+.advantage__block h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 41px;
+    color: #011F3A;
+    margin-bottom: 82px;
+}
+
+.advantage__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.advantage__item {
+    max-width: 254px;
+}
+
+.advantage__item img {
+    width: 100%;
+    margin-bottom: 54px;
+}
+
+.advantage__item h4 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+    color: #011F3A;
+    letter-spacing: 0.36px;
+    margin-bottom: 12px;
+}
+
+.advantage__item p {
+    font-size: 15px;
+    line-height: 23px;
+    color: #A1A1A1;
+    margin-bottom: 2px;
+}
