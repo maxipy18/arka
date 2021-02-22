@@ -11,8 +11,9 @@ body {
 }
 
 .container {
+    max-width: 1200px;
     margin: 0 auto;
-    max-width: 1200px;     
+         
 }
 
 /* ------ header ------ */
@@ -532,111 +533,133 @@ nav {
 .merchants__list {    
     background-color: #fff;
     box-shadow: 0px 14px 44px rgba(143, 143, 143, 0.25);
-}
-
-.merch__company {
     display: flex;
-    flex-wrap: wrap;        
+    flex-direction: column;
 }
 
-.company__item {      
-    padding-top: 100px;
-    padding-bottom: 145px;
+.merch__company {    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+}
+
+.company__item {
+    flex: 1;    
     display: flex; 
-    justify-content: center;   
-    flex: 1; 
-       
+    flex-direction: column;   
+    justify-content: center; 
+    align-items: center;  
+    padding: 100px 0;
 }
 
-.company__item a {
-    text-decoration: none;
-    
-}
 
-.company__item-img {
+.company__img-img {
     margin-bottom: 20px;
 }
 
-.company__item-rating {
+.raiting__star {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
-.stars {
+.raiting__star-stars {
     display: inline;
-    opacity: 0.6;
     padding-right: 4px;
+    opacity: 0.5;
 }
 
-.company__item-rating span {
+.raiting__star-count {
     font-size: 18px;
     letter-spacing: 0.36px;
     color: #011F3A;
 }
 
-.company__item:hover .stars {
+.company__item a {
+    text-decoration: none;
+}
+
+.company__item a:hover .raiting__star-stars {
     opacity: 1;
 }
+
 
 .merch__user {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 55px;
+     
+    
 }
 
-.user__item {    
+.merch__item {
+    flex:auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; 
+    
+      
 }
 
+.item__img {    
+    flex: content;
+    
+}
 
-.user__item-img img {
-    max-width: 100%;           
+.item__img-img {
+    width: 100%;
     display: block;
     margin-bottom: -1px;
 }
 
-.user__card {
-    max-width: 612px;
-    padding: 62px 106px;    
+.item__card { 
+    flex: auto;       
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-.user__card-review {    
+
+.item__content {    
+    max-width: 400px;    
+    
+}
+
+.item__content-text {
     font-family: 'Lato', sans-serif;
     font-size: 24px;
     line-height: 32px;
-    color: #011F3A;
     margin-bottom: 12px;
 }
 
-.card__footer {
+.card__user {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .user__info {
     display: flex;
 }
 
-.user__photo {    
+.user__photo {
     margin-right: 20px;
 }
 
-.user__content {
+.user__data {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .user__name {
     font-family: 'Lato', sans-serif;
     font-size: 18px;
+    line-height: 22px;
     color: #011F3A;
-    
+    margin-bottom: 4px;
 }
 
 .product__name {
@@ -646,31 +669,33 @@ nav {
     color: #A1A1A1;
 }
 
-.card__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.user__link {
+    margin: auto;
+    padding: 10px 0;
 }
 
-.card__footer-link {    
-    text-decoration: none;    
+.user__link-link {
+    text-decoration: none;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 1.96px;
     text-transform: uppercase;
     color: #3D5675;
-    padding: 13px 25px;
-    border-radius: 44px;    
     background-color: #f2f2f2;
+    border-radius: 44px;
+    padding: 13px 25px;
     transition: 0.5s;
 }
 
-.card__footer-link:hover {
-    background-color: #F2AE4D;    
+.user__link-link:hover {
+    background-color: #F2AE4D;
 }
 
 
+
+
 /* -------- it --------- */
+
 
 
 .it {
