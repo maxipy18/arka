@@ -27,7 +27,7 @@ body {
 
 .header__menu {
     max-width: 100%;
-    display: flex;
+    display: flex;    
     justify-content: space-between;
     padding: 19px 24px;
     background-color: #fff;
@@ -671,7 +671,7 @@ nav {
 
 .user__link {
     margin: auto;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .user__link-link {
@@ -841,4 +841,252 @@ footer {
 
 .btn:hover {
     color: #F2AE4D;
+}
+
+@media (max-width:1200px) {
+    .container {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width:993px) {
+    .nav__item-link,
+    .header__account a {
+        letter-spacing: 0px;
+        font-size: 12px;
+        padding: 0 12px;
+    }
+
+    .header__account a {
+        padding: 0 30px;
+    }
+
+    .footer__logo,
+    .footer__list {
+        margin-right: 0;
+    }
+}
+
+@media (max-width:768px) {
+    nav,
+    .header__account {
+        display: none;
+    }
+
+    .header__bg {
+        padding: 50px 0;
+        background-image: none;
+    }
+
+    .header__content h2 {
+        font-size: 38px;
+    }
+
+    .logo__list {
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .customize__block {
+        padding: 30px 0;
+    }
+
+    .customize__title {
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+    .customize__cards {
+        margin-bottom: 20px;
+    }
+
+    .boxes {
+        padding: 30px 0;
+    }
+
+    .boxes__block {
+        padding: 30px 0;
+    }
+
+    .boxes__block h2 {
+        margin-bottom: 20px;
+    }
+
+    .boxes__cards {
+        margin-bottom: 30px;
+    }
+
+    .advantage__block {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .advantage__block h2 {
+        margin-bottom: 20px;
+    }
+
+    .advantage__item img {
+        margin-bottom: 20px;
+    }
+
+    .advantage__list {
+        justify-content: center;
+    }
+    
+
+    .need {
+        padding: 20px 0;
+    }
+
+    .need__block {
+        padding: 40px 0;
+    }
+
+    .merchants__block {
+        padding: 20px 0;
+    }
+
+    .merchants__block h2 {
+        margin-bottom: 20px;
+    }
+
+    .company__item {
+        padding: 30px 0;
+    }
+
+    .merch__user {
+        row-gap: 20px;
+    }
+
+    .item__content-text {
+        font-size: 20px;
+    }
+
+    .it__block {
+        padding: 30px 0;
+    }
+    .it__block h2 {
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        padding: 30px 0;
+        justify-content: space-evenly;
+    }
+
+    .footer__link {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .form h4, 
+    .form input,
+    .btn {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:321px) {
+    .header__content {
+        text-align: center;
+    }
+
+    .header__content a {
+        padding: 10px 20px;
+    }
+
+    .customize__block {
+        padding: 20px 0;
+    }
+
+    .customize__title h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .customize__title a {
+        padding: 10px 20px;
+    }
+
+    .unbranded a {
+        padding: 10px 20px;
+    }
+
+    .boxes {
+        padding: 15px 0;
+    }
+
+    .boxes__block {
+        padding: 20px 0;
+    }
+
+    .boxes__block h2 {
+        font-size: 24px;
+    }
+
+    .boxes__item img {
+        margin-bottom: 0;
+    }
+
+    .advantage__block h2 {
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+
+    .need__block {
+        padding: 20px 0;
+    }
+
+    .need__card {
+        margin-bottom: 15px;
+    }
+
+    .merchants__block h2 {
+        font-size: 24px;
+    }
+
+    .item__content-text {
+        font-size: 16px;
+    }
+
+    .user__name {
+        font-size: 14px;
+    }
+
+    .product__name {
+        font-size: 13px;
+    }
+
+    .user__link-link {
+        padding: 10px 20px;
+    }
+
+    .it__block {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .it__block h2 {
+        font-size: 24px;
+    }
+
+    .link__disign {
+        padding: 10px 20px;
+        margin-right: 0;
+        margin-bottom: 7px;
+    }
+
+    .link__products {
+        padding: 10px 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        
+    }
+
+    .footer__logo {
+        margin-bottom: 10px;
+    }
+
 }
