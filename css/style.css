@@ -843,9 +843,28 @@ footer {
     color: #F2AE4D;
 }
 
+
+
+
+/* -------- media ------- */
+
+
+
+
 @media (max-width:1200px) {
     .container {
         padding: 0 10px;
+    }
+
+    .nav__item-link,
+    .header__account a {
+        letter-spacing: 0px;        
+        
+    }
+
+    .footer__list,
+    .footer__logo {
+        margin-right: 10px;
     }
 }
 
@@ -858,7 +877,27 @@ footer {
     }
 
     .header__account a {
-        padding: 0 30px;
+        padding-right: 30px;
+    }
+
+    .nav__item-link::before,
+    .header__account a::before {
+        width: 10px; 
+        height: 10px;
+        background-size: contain;
+        top: 3px;
+    }
+
+    .nav__item:last-of-type a::after {
+        top: 0;
+        right: -4px;
+    }
+    
+
+    .footer__link,
+    .form h4, .form input,
+    .btn {
+        font-size: 14px;
     }
 
     .footer__logo,
