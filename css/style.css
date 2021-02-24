@@ -121,6 +121,18 @@ nav {
     opacity: 1;
 }
 
+.burger {
+    width: 24px;
+    height: 24px;
+    cursor:pointer;
+    background: linear-gradient(to bottom, #011F3A 15%, transparent 16%, transparent 43%, #011F3A 44%, #011F3A 59%, transparent 60%, transparent 85%, #011F3A 86%);
+    display: none;
+}
+
+.burger-active {
+    background: linear-gradient(45deg, transparent 45%, #011F3A 46%, #011F3A 55%, transparent 56%), linear-gradient(-45deg, transparent 45%, #011F3A 46%, #011F3A 55%, transparent 56%);
+}
+
 
 .header__inner {
     background-color: #F2AE4D;
@@ -844,6 +856,58 @@ footer {
 }
 
 
+/* -------- modal ------ */
+
+.overlay {
+    position: absolute;
+    position: fixed;    
+    top: 0;
+    left: -200%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.overlay-active {
+    left: 0;
+}
+
+.popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 30px;
+    background-color: #333;
+    border-radius: 8px;
+}
+
+.close-btn {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background: linear-gradient(45deg, transparent 45%, #F2AE4D 55%, transparent 56%), linear-gradient(-45deg, transparent 45%, #F2AE4D 55%, transparent 56%);        
+    margin-bottom: 25px;
+}
+
+.popup-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    color: #F2AE4D;
+    margin-bottom: 10px;
+    
+}
+
+.popup-link:hover {
+    text-decoration: underline;
+}
+
 
 
 /* -------- media ------- */
@@ -910,6 +974,10 @@ footer {
     nav,
     .header__account {
         display: none;
+    }
+
+    .burger {
+        display: block;
     }
 
     .header__bg {
